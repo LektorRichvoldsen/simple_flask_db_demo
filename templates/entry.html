@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ the_title }}</h2>
+<form method='POST' action='/insert'>
+
+<p>Her kan du skrive inn ting og tang:</p>
+<input name='ting' type='TEXT' width='60'>
+<input name='tang' type='TEXT' value='default verdi'>
+
+<p>Trykk her når du er klar:</p>
+<p><input value='Trykk!' type='SUBMIT'></p>
+</form>
+{% endblock %}
